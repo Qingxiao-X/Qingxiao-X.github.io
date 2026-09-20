@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qingxiao (Kit) Xu</title>
+  <meta name="description" content="Qingxiao (Kit) Xu is a Ph.D. student at Texas A&M University researching software security, program analysis, concurrency, and AI for software engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23512f4d'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='serif' font-size='18' font-weight='700' fill='%23fff8fa'%3EK%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { --plum:#512f4d; --rose:#a64d6b; --rose-dark:#803850; --ink:#29212a; --muted:#6f626d; --line:#eadde3; --soft:#fbf6f8; --petal:#f4e3ea; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:linear-gradient(180deg,#fff 0,#fff 72%,#fdf9fb 100%); font-family:"DM Sans",Arial,sans-serif; font-size:16px; line-height:1.72; }
+    a { color:var(--rose-dark); text-decoration:none; }
+    a:hover { text-decoration:underline; text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid #dba7b8; outline-offset:3px; border-radius:5px; }
+    .container { width:min(990px, calc(100% - 42px)); margin:auto; }
+    header { border-bottom:1px solid rgba(166,77,107,.18); background:rgba(255,252,253,.94); backdrop-filter:blur(12px); position:sticky; top:0; z-index:10; }
+    nav { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:28px; }
+    .name { color:var(--plum); font-family:"Playfair Display",Georgia,serif; font-weight:700; font-size:1.22rem; }
+    .nav-links { display:flex; gap:25px; align-items:center; font-size:.88rem; font-weight:500; }
+    .nav-links a { color:#5f515d; }
+    .nav-links a:hover { color:var(--rose); text-decoration:none; }
+    main { padding:72px 0 88px; }
+    .intro { display:grid; grid-template-columns:1fr 245px; gap:64px; align-items:start; padding:16px 0 64px; position:relative; scroll-margin-top:92px; }
+    .intro::before { content:""; position:absolute; width:72px; height:8px; border-radius:99px; background:linear-gradient(90deg,var(--rose),#dfabc0); top:-12px; left:0; }
+    h1,h2 { font-family:"Playfair Display",Georgia,serif; color:var(--plum); }
+    h1 { font-size:clamp(2.75rem,6vw,4.55rem); letter-spacing:-.035em; line-height:1.04; margin:0 0 11px; }
+    .title { font-size:1.04rem; color:var(--muted); margin-bottom:25px; }
+    .bio p { margin:0 0 15px; }
+    .bio strong { color:var(--plum); }
+    .links { display:flex; flex-wrap:wrap; gap:10px 18px; margin-top:24px; font-size:.9rem; font-weight:600; }
+    .links a { padding:7px 12px; border:1px solid #dfc6d0; border-radius:99px; background:#fff; transition:.18s ease; }
+    .links a:hover { text-decoration:none; border-color:var(--rose); background:var(--soft); transform:translateY(-1px); }
+    .links a::after { content:" ↗"; font-size:.75em; }
+    .profile-aside { display:grid; gap:18px; }
+    .portrait { margin:0; position:relative; }
+    .portrait::after { content:""; position:absolute; inset:10px -9px -9px 10px; border:1px solid #d8a9ba; border-radius:112px 112px 18px 18px; z-index:-1; }
+    .portrait img { display:block; width:100%; height:305px; object-fit:cover; object-position:center 42%; border-radius:112px 112px 18px 18px; box-shadow:0 18px 45px rgba(81,47,77,.12); }
+    .research-box { border:1px solid #e7ced8; border-radius:26px 26px 8px 26px; background:linear-gradient(145deg,#fff 0,var(--soft) 100%); padding:26px 24px 22px; box-shadow:0 16px 40px rgba(81,47,77,.07); }
+    .research-box h3 { margin:0 0 10px; font-size:.76rem; text-transform:uppercase; letter-spacing:.11em; color:var(--rose-dark); }
+    .research-box ul { margin:0; padding:0; list-style:none; font-size:.9rem; color:#465365; }
+    .research-box li { padding:7px 0; border-bottom:1px solid #eadde3; }
+    .research-box li:last-child { border-bottom:0; }
+    section { padding:44px 0; border-top:1px solid var(--line); scroll-margin-top:68px; }
+    .section-title { display:flex; align-items:baseline; gap:14px; margin-bottom:27px; }
+    h2 { font-size:1.9rem; letter-spacing:-.02em; margin:0; }
+    .rule { height:1px; background:linear-gradient(90deg,var(--line),transparent); flex:1; }
+    .pub-list { display:grid; gap:30px; }
+    .pub { display:grid; grid-template-columns:92px 1fr; gap:23px; }
+    .venue { align-self:start; text-align:center; color:var(--rose-dark); background:var(--soft); border:1px solid #e4cbd5; border-radius:12px; padding:9px 5px; font-size:.76rem; font-weight:700; line-height:1.35; }
+    .pub h3 { font-family:"Playfair Display",Georgia,serif; color:var(--plum); font-size:1.18rem; line-height:1.38; margin:0 0 5px; }
+    .authors { color:#495568; font-size:.88rem; line-height:1.55; margin:0 0 4px; }
+    .authors .me { font-weight:700; color:var(--ink); }
+    .pub-meta { color:var(--muted); font-size:.84rem; margin:0 0 7px; }
+    .paper-links { display:flex; gap:14px; font-size:.82rem; font-weight:600; }
+    .paper-links a { border-bottom:1px solid #d29bad; }
+    .paper-links a:hover { text-decoration:none; border-color:var(--rose-dark); }
+    .experience { display:grid; }
+    .item { display:grid; grid-template-columns:150px 1fr; gap:28px; padding:22px 0; border-bottom:1px solid #eee3e8; }
+    .item:last-child { border-bottom:0; }
+    .date { color:var(--muted); font-size:.82rem; font-weight:600; padding-top:2px; }
+    .item h3 { margin:0 0 3px; color:var(--plum); font-size:1rem; }
+    .item .org { color:var(--rose-dark); font-size:.9rem; margin-bottom:5px; }
+    .recognition { display:flex; gap:18px; align-items:flex-start; padding:20px 23px; background:var(--soft); border:1px solid #ead5dd; border-radius:14px; }
+    .recognition strong { color:var(--plum); white-space:nowrap; }
+    .recognition-copy { flex:1; }
+    .project-link { display:inline-flex; margin-top:10px; padding:6px 11px; border:1px solid #d7aabc; border-radius:999px; background:#fff; font-size:.82rem; font-weight:600; }
+    .project-link:hover { text-decoration:none; background:var(--petal); border-color:var(--rose); }
+    footer { border-top:1px solid var(--line); padding:24px 0 34px; color:#747e8b; font-size:.8rem; }
+    footer .container { display:flex; justify-content:space-between; gap:20px; }
+    @media (max-width:720px) {
+      .container { width:min(100% - 30px,960px); }
+      .nav-links { gap:15px; }
+      .nav-links a:nth-child(2) { display:none; }
+      main { padding-top:45px; }
+      .intro { grid-template-columns:1fr; gap:28px; padding-bottom:42px; }
+      .profile-aside { grid-template-columns:minmax(160px,220px) minmax(220px,1fr); align-items:start; }
+      .portrait img { height:275px; }
+      .research-box { max-width:430px; }
+      .pub { grid-template-columns:1fr; gap:10px; }
+      .venue { width:max-content; min-width:82px; }
+      .item { grid-template-columns:1fr; gap:5px; }
+      .recognition { flex-direction:column; gap:4px; }
+      footer .container { flex-direction:column; gap:5px; }
+    }
+    @media (max-width:500px) {
+      .profile-aside { grid-template-columns:1fr; }
+      .portrait { max-width:220px; }
+      .portrait img { height:275px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="name" href="#top">Qingxiao (Kit) Xu</a>
+      <div class="nav-links"><a href="#about">About</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="https://scholar.google.com/citations?user=Tmndju0AAAAJ&hl=en" target="_blank" rel="noreferrer">Scholar</a></div>
+    </nav>
+  </header>
+
+  <main class="container" id="top">
+    <div class="intro" id="about">
+      <div class="bio">
+        <h1>Qingxiao <span style="color:var(--rose)">(Kit)</span> Xu</h1>
+        <div class="title">Ph.D. Student in Computer Science · Texas A&amp;M University</div>
+        <p>I am a Computer Science Ph.D. student at <strong>Texas A&amp;M University</strong>, where I work in the <a href="https://o2lab.github.io/" target="_blank" rel="noreferrer">O2 Lab</a> with <a href="https://o2lab.github.io/" target="_blank" rel="noreferrer">Prof. Jeff Huang</a>. My research interests include program analysis, fuzzing, concurrent systems, and agentic and retrieval-augmented generation (RAG) systems.</p>
+        <p>My current research focuses on building testing systems for real-world codebases, particularly techniques for detecting logical races and other race conditions in Linux kernel Rust drivers.</p>
+        <p>Before joining Texas A&amp;M, I received my B.Eng. in Computer Science from <a href="https://english.bnu.edu.cn/" target="_blank" rel="noreferrer">Beijing Normal University</a> in 2023, advised by <a href="https://ai.bnu.edu.cn/En/Study/Faculty/Professor/ee6aea6538214399a674f3141643f0ec.htm" target="_blank" rel="noreferrer">Prof. Xianchuan Yu</a>. I also conducted a research internship at Tsinghua University under the supervision of <a href="https://www.yufangwen.com/" target="_blank" rel="noreferrer">Prof. Fangwen Yu</a> and <a href="https://faculty.dpi.tsinghua.edu.cn/shiluping/en/index.htm" target="_blank" rel="noreferrer">Prof. Luping Shi</a>.</p>
+        <p><strong><em>I am always open to discussions and collaborations — feel free to <a href="mailto:qingxiao@tamu.edu">reach out</a>!</em></strong></p>
+        <div class="links">
+          <a href="https://scholar.google.com/citations?user=Tmndju0AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a href="https://github.com/Qingxiao-X" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/qingxiao-xu-ba6633369/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="profile-aside">
+        <figure class="portrait"><img src="kit-xu-professional.png" alt="Portrait of Qingxiao (Kit) Xu" width="1122" height="1402"></figure>
+        <aside class="research-box" aria-label="Research interests">
+          <h3>Research interests</h3>
+          <ul><li>Program Analysis &amp; Fuzzing</li><li>Concurrent Systems</li><li>Agentic AI</li></ul>
+        </aside>
+      </div>
+    </div>
+
+    <section id="publications">
+      <div class="section-title"><h2>Selected Publications</h2><span class="rule"></span></div>
+      <div class="pub-list">
+        <article class="pub"><div class="venue">Preprint<br>2026</div><div><h3>A Systematic Study of LLM-Based Architectures for Automated Patching</h3><p class="authors"><span class="me">Qingxiao Xu</span>, Ze Sheng, Zhicheng Chen, and Jeff Huang</p><p class="pub-meta">arXiv preprint, 2026</p><div class="paper-links"><a href="https://arxiv.org/abs/2603.01257" target="_blank" rel="noreferrer">Paper</a></div></div></article>
+        <article class="pub"><div class="venue">Preprint<br>2026</div><div><h3>FuzzingBrain V2: A Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction</h3><p class="authors">Ze Sheng, Zhicheng Chen, <span class="me">Qingxiao Xu</span>, Kewen Zhu, and Jeff Huang</p><p class="pub-meta">arXiv preprint, 2026</p><div class="paper-links"><a href="https://arxiv.org/abs/2605.21779" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/fuzzingbrain/afc-crs-all-you-need-is-a-fuzzing-brain" target="_blank" rel="noreferrer">Code</a></div></div></article>
+        <article class="pub"><div class="venue">SOAP<br>2025</div><div><h3>Optimizing Type Migration for LLM-Based C-to-Rust Translation: A Data Flow Graph Approach</h3><p class="authors"><span class="me">Qingxiao Xu</span> and Jeff Huang</p><p class="pub-meta">14th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis (SOAP), 2025</p><div class="paper-links"><a href="https://dl.acm.org/doi/10.1145/3735544.3735582" target="_blank" rel="noreferrer">Paper</a></div></div></article>
+        <article class="pub"><div class="venue">USENIX<br>Security '26</div><div><h3>SoK: DARPA's AI Cyber Challenge (AIxCC): Competition Design, Architectures, and Lessons Learned</h3><p class="authors">Cen Zhang, Younggi Park, Fabian Fleischer, et al., <span class="me">Qingxiao Xu</span>, et al.</p><p class="pub-meta">35th USENIX Security Symposium, 2026 · Distinguished Paper Award Runner-Up</p><div class="paper-links"><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/zhang-cen" target="_blank" rel="noreferrer">Paper</a></div></div></article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-title"><h2>Experience</h2><span class="rule"></span></div>
+      <div class="experience">
+        <div class="item"><div class="date">May – Aug 2026</div><div><h3>Core Planner Intern</h3><div class="org">DiDi Research America · San Jose, California</div></div></div>
+        <div class="item"><div class="date">Oct 2024 – Present</div><div><h3>Research Assistant</h3><div class="org">Texas A&amp;M University · College Station, Texas</div></div></div>
+        <div class="item"><div class="date">Mar – Jul 2023</div><div><h3>Research Assistant</h3><div class="org">Tsinghua University · Beijing, China</div></div></div>
+        <div class="item"><div class="date">Jun 2022 – Mar 2023</div><div><h3>Machine Learning Engineer Intern</h3><div class="org">iFlytek · Beijing, China</div></div></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="recognition-title">
+      <div class="section-title"><h2 id="recognition-title">Recognition</h2><span class="rule"></span></div>
+      <div class="recognition"><strong>AIxCC Finalist · 4th Place</strong><div class="recognition-copy"><span>Built an autonomous Cyber Reasoning System for vulnerability discovery and patching in DARPA’s Artificial Intelligence Cyber Challenge.</span><br><a class="project-link" href="https://fuzzingbrain.github.io/" target="_blank" rel="noreferrer">Visit the FuzzingBrain project website ↗</a></div></div>
+    </section>
+  </main>
+
+  <footer><div class="container"><span>© <span id="year"></span> Qingxiao (Kit) Xu</span><span>Last updated September 2026</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
